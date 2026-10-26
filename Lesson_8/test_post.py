@@ -1,7 +1,7 @@
 import requests
 
 base_url = "https://ru.yougile.com/api-v2"
-token = " "
+token = ""
 company_id = "cad634d1-004f-4554-a3ea-c39cd3c41cee"
 user_id = "9dc05539-9655-49c2-b1a6-edfb0d3325d0"
 
