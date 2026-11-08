@@ -1,0 +1,1 @@
+DB_CONNECTION = "postgresql://postgres:Gettaway951753@localhost:5432/QA"
