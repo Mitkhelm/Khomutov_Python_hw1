@@ -26,6 +26,9 @@ class MainPageCalc:
             """
             self.search_delay = (By.ID, "delay")
         with allure.step("Вводит в поле задержки новое значение"):
+            """
+            Вводит в поле задержки новое значение.
+            """
             self.enter_value = (By.XPATH, "//span[text()]")
         with allure.step("Находит окно результата"):
             self.results_selector = (By.CSS_SELECTOR, ".screen")
