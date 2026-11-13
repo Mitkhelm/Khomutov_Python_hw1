@@ -5,6 +5,9 @@ import allure
 
 @pytest.fixture()
 def driver():
+  """
+  Фикстура для инициализации и завершения работы драйвера.
+  """
   driver = webdriver.Chrome()
   driver.maximize_window()
   driver.get("https://bonigarcia.dev/selenium-webdriver-java/slow-calculator.html")

@@ -1,0 +1,6 @@
+[
+  "test_calc.py::test_calc",
+  "test_shop.py::test_auth",
+  "test_shop.py::test_buy",
+  "test_shop.py::test_shop"
+]

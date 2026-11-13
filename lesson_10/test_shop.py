@@ -8,13 +8,20 @@ import allure
 
 @pytest.fixture()
 def browser():
+  """
+  Фикстура для инициализации и завершения работы драйвера.
+  """
   driver = webdriver.Firefox()
   driver.maximize_window()
   yield driver
   driver.quit()
 
-@allure.suite("Интернет-магазина")
+@allure.suite("Интернет-магазин")
 @allure.title("Тест работы интернет-магазина")
+@allure.description("Авторизация, добавление товаров в корзину,"
+                    " оформление заказа")
+@allure.feature("Клик по внутренним ссылкам")
+@allure.severity("CRITICAL")
 def test_shop(browser):
   browser.get("https://www.saucedemo.com/")
   auth = AuthPageShop(browser)
